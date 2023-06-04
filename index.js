@@ -6,7 +6,7 @@ import utilsRoutes from './routes/utilsRoute.js';
 dotenv.config();
 
 let corsOptions = {
-  origin: ["https://animeshwebdev.vercel.app/", 'http://localhost:3000/'],
+  origin: ["https://animeshwebdev.vercel.app", 'http://localhost:3000'],
   optionsSuccessStatus: 200,
 };
 
