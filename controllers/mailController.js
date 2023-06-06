@@ -11,7 +11,7 @@ export const sendMail = async (req, res) => {
       pass: process.env.SMTP_PASS, 
     },
   });
-    const message = `My email: ${contactData.userEmail}\n\n\n My message: ${contactData.userMessage}`
+    const message = `My Name: ${contactData.firstName} ${contactData.lastName}\n My email: ${contactData.userEmail}\n My Message:\n ${contactData.userMessage}`
     let mailOptions = {
       from: process.env.SMTP_USER,
       to: process.env.SMTP_USER,
